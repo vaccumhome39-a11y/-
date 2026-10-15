@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#15803d">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>กิตติค้าไม้คำนวนซุง</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M12 94V46a38 38 0 0 1 76 0v48z' fill='%2315803d'/%3E%3Ccircle cx='50' cy='56' r='27' fill='none' stroke='%23fff' stroke-width='7' stroke-dasharray='5.3 5.3'/%3E%3Ccircle cx='50' cy='56' r='24' fill='%23fff'/%3E%3Ccircle cx='50' cy='56' r='16' fill='none' stroke='%2315803d' stroke-width='3'/%3E%3Ccircle cx='50' cy='56' r='8' fill='none' stroke='%2315803d' stroke-width='3'/%3E%3Ccircle cx='50' cy='56' r='2.5' fill='%2315803d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f0fdf4;--card:#fff;--ink:#14281c;--mut:#55705f;--line:#c8e6d1;--acc:#15803d;--accink:#fff;--soft:#dcfce7;--bad:#a8321f;--in:#f8fef9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121815;--card:#1a221e;--ink:#e6ece8;--mut:#92a199;--line:#2c3832;--acc:#58b894;--accink:#0c1411;--soft:#22302a;--bad:#ef8a76;--in:#141b17}}
+:root[data-theme="dark"]{--bg:#121815;--card:#1a221e;--ink:#e6ece8;--mut:#92a199;--line:#2c3832;--acc:#58b894;--accink:#0c1411;--soft:#22302a;--bad:#ef8a76;--in:#141b17}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Sarabun','Noto Sans Thai',Tahoma,sans-serif;font-size:16px;line-height:1.45;padding-bottom:96px}
+main{max-width:980px;margin:0 auto;padding:16px 14px}
+h1{font-size:1.5rem;margin:4px 0 2px}
+.brand{display:flex;align-items:center;gap:12px;margin:4px 0 6px}
+.brand svg{width:52px;height:52px;flex:none}
+.brand h1{margin:0}
+h2{font-size:1.1rem;margin:0 0 10px}
+.sub{color:var(--mut);margin:0 0 14px}
+.tabs{display:flex;gap:6px;background:var(--soft);padding:5px;border-radius:12px;margin-bottom:12px}
+.tabs button{flex:1;border:0;background:transparent;color:var(--ink);font:inherit;font-weight:600;padding:10px;border-radius:8px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--acc);color:var(--accink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px}
+.row2{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}
+label{display:block;font-size:.85rem;color:var(--mut);margin-bottom:3px}
+input{font:inherit;color:var(--ink);background:var(--in);border:1px solid var(--line);border-radius:8px;padding:8px 9px;width:100%;min-width:0}
+input:focus,button:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+.form{background:var(--in);border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:14px}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:720px}
+th{font-size:.82rem;font-weight:600;color:var(--mut);text-align:right;padding:8px;background:var(--soft);white-space:nowrap}
+td{padding:8px;border-top:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th.l,td.l{text-align:left}
+td.s{font-weight:600}
+td.a{text-align:center}
+tr.ed td{background:var(--soft)}
+.btn.sm{padding:4px 10px;font-size:.85rem;margin-left:4px}
+.ig{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.ig .w{grid-column:1/-1}
+.form input{background:var(--card)}
+.res{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
+.res span{display:block;font-size:.78rem;color:var(--mut)}
+.res b{font-variant-numeric:tabular-nums;font-size:.95rem}
+.res b.s{color:var(--acc)}
+
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:600;padding:9px 14px;border-radius:9px;cursor:pointer}
+.btn.p{background:var(--acc);color:var(--accink);border-color:var(--acc)}
+.btn.d{color:var(--bad)}
+.msg{color:var(--mut);font-size:.9rem}
+details{margin-top:10px;color:var(--mut)}
+details summary{cursor:pointer}
+details .k{display:flex;gap:8px;align-items:center;margin-top:8px;max-width:340px}
+.tot{position:fixed;left:0;right:0;bottom:0;background:var(--acc);color:var(--accink);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));z-index:5}
+.tot div{max-width:980px;margin:0 auto;display:flex;justify-content:space-between;gap:10px}
+.tot span{display:block;font-size:.78rem;opacity:.85}
+.tot b{font-size:1.3rem;font-variant-numeric:tabular-nums}
+.tot .r{text-align:right}
+.rec{display:flex;gap:10px;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding:10px 0;flex-wrap:wrap}
+.rec:first-of-type{border-top:0}
+.rec small{color:var(--mut);display:block}
+.tag{display:inline-block;background:var(--soft);border-radius:6px;padding:1px 8px;font-size:.8rem;margin-right:6px}
+.empty{color:var(--mut);margin:4px 0}
+@media (max-width:560px){.ig{grid-template-columns:1fr 1fr}.row2{grid-template-columns:1fr 1fr}.row2>div:first-child{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<main>
+<div class="brand"><svg viewBox="0 0 100 100" role="img" aria-label="โลโก้"><path d="M12 94V46a38 38 0 0 1 76 0v48z" style="fill:var(--acc)"/><circle cx="50" cy="56" r="27" fill="none" stroke="#fff" stroke-width="7" stroke-dasharray="5.3 5.3"/><circle cx="50" cy="56" r="24" fill="#fff"/><circle cx="50" cy="56" r="16" fill="none" style="stroke:var(--acc)" stroke-width="3"/><circle cx="50" cy="56" r="8" fill="none" style="stroke:var(--acc)" stroke-width="3"/><circle cx="50" cy="56" r="2.5" style="fill:var(--acc)"/></svg><h1>กิตติค้าไม้คำนวนซุง</h1></div>
+<p class="sub">ปริมาตร = โต² × ยาว × ค่าคงที่ &nbsp;|&nbsp; สุทธิ (คิว) = จำนวน × ปริมาตร &nbsp;|&nbsp; ราคาสุทธิ = สุทธิ (คิว) × ราคา</p>
+
+<div class="tabs" role="tablist">
+  <button role="tab" id="t-log" aria-selected="true">ซุง</button>
+  <button role="tab" id="t-wood" aria-selected="false">ไม้ปกติ</button>
+</div>
+
+<section class="card">
+  <div class="row2">
+    <div><label for="name">ชื่อลูกค้า / เลขที่บิล</label><input id="name" placeholder="เช่น คุณสมชาย / บิล 001"></div>
+    <div><label for="date">วันที่</label><input id="date" type="date"></div>
+    <div><label for="note">หมายเหตุ</label><input id="note"></div>
+  </div>
+</section>
+
+<section class="card">
+  <div class="form">
+    <div class="ig">
+      <div class="w"><label for="fd">รายละเอียด</label><input id="fd"></div>
+      <div><label for="fq">จำนวน</label><input id="fq" type="number" step="any" inputmode="decimal" value="1"></div>
+      <div><label for="fc">โต (ม.)</label><input id="fc" type="number" step="any" inputmode="decimal"></div>
+      <div><label for="fl">ยาว (ม.)</label><input id="fl" type="number" step="any" inputmode="decimal"></div>
+      <div><label for="fp">ราคา (บาท)</label><input id="fp" type="number" step="any" inputmode="decimal"></div>
+    </div>
+    <div class="res"><div><span>ปริมาตร (ม³)</span><b id="pv">0.0000</b></div><div><span>สุทธิ (คิว)</span><b id="pn">0.0000</b></div><div><span>ราคาสุทธิ (บาท)</span><b class="s" id="pt">0.00</b></div></div>
+    <div class="bar"><button class="btn p" id="add">+ เพิ่ม</button><button class="btn" id="cancel" hidden>ยกเลิกแก้ไข</button></div>
+  </div>
+  <div class="wrap"><table>
+    <thead><tr><th class="l">#</th><th class="l">รายละเอียด</th><th>จำนวน</th><th>โต (ม.)</th><th>ยาว (ม.)</th><th>ปริมาตร (ม³)</th><th>สุทธิ (คิว)</th><th>ราคา (บาท)</th><th>ราคาสุทธิ (บาท)</th><th></th></tr></thead>
+    <tbody id="tb"></tbody>
+  </table></div>
+  <div class="bar">
+    <button class="btn d" id="clr">ล้างทั้งหมด</button>
+    <button class="btn p" id="save">บันทึกรายการ</button>
+    <span class="msg" id="msg" role="status"></span>
+  </div>
+  <details><summary>ตั้งค่าสูตร</summary>
+    <div class="k"><label for="k" style="margin:0;white-space:nowrap">ค่าคงที่</label><input id="k" type="number" step="any" inputmode="decimal"></div>
+  </details>
+</section>
+
+<section class="card">
+  <h2>รายการที่บันทึกไว้</h2>
+  <div id="hist"></div>
+</section>
+</main>
+
+<div class="tot"><div>
+  <div><span>จำนวนรวม</span><b id="sq">0</b></div>
+  <div><span>สุทธิรวม (คิว)</span><b id="sn">0.0000</b></div>
+  <div class="r"><span>ราคารวม (บาท)</span><b id="st">0.00</b></div>
+</div></div>
+
+<script>
+const KEY='wood-calc-v1';
+const NAMES={log:'ซุง',wood:'ไม้ปกติ'};
+const blank=()=>({d:'',q:'1',c:'',l:'',p:''});
+const fresh=()=>({k:{log:0.7955,wood:0.0228},rows:{log:[],wood:[]},hist:[]});
+function load(){try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&s.rows&&s.k&&s.hist){['log','wood'].forEach(t=>{s.rows[t]=(s.rows[t]||[]).filter(x=>parseFloat(x.c)>0&&parseFloat(x.l)>0)});return s}}catch(e){}return fresh()}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+let S=load(),cur='log',armed=null;
+const $=id=>document.getElementById(id);
+const n=v=>parseFloat(v)||0;
+const f=(v,d)=>v.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+const calc=(r,k)=>{const vol=n(r.c)**2*n(r.l)*k,net=n(r.q)*vol;return{vol,net,tot:net*n(r.p)}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const today=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
+function say(t){$('msg').textContent=t;clearTimeout(say.t);say.t=setTimeout(()=>$('msg').textContent='',3500)}
+
+function totals(rows,k){let q=0,net=0,tot=0;rows.forEach(r=>{const c=calc(r,k);if(c.vol>0)q+=n(r.q);net+=c.net;tot+=c.tot});return{q,net,tot}}
+function paintTotals(){const t=totals(S.rows[cur],S.k[cur]);$('sq').textContent=f(t.q,0);$('sn').textContent=f(t.net,4);$('st').textContent=f(t.tot,2)}
+
+function render(){
+  ['log','wood'].forEach(t=>$('t-'+t).setAttribute('aria-selected',t===cur));
+  if(document.activeElement!==$('k'))$('k').value=S.k[cur];
+  $('tb').innerHTML=S.rows[cur].length?S.rows[cur].map((r,i)=>{
+    const c=calc(r,S.k[cur]);
+    return `<tr class="${editing===i?'ed':''}"><td class="l">${i+1}</td><td class="l">${esc(r.d)||'-'}</td><td>${esc(r.q)}</td><td>${esc(r.c)}</td><td>${esc(r.l)}</td><td>${f(c.vol,4)}</td><td>${f(c.net,4)}</td><td>${f(n(r.p),2)}</td><td class="s">${f(c.tot,2)}</td><td class="a"><button class="btn sm" data-ed="${i}">แก้ไข</button><button class="btn sm d" data-del="${i}">ลบ</button></td></tr>`}).join(''):'<tr><td colspan="10" style="text-align:center;color:var(--mut)">ยังไม่มีรายการ กรอกข้อมูลด้านบนแล้วกด “+ เพิ่ม”</td></tr>';
+  paintPrev();
+  paintTotals();renderHist();
+}
+
+let editing=null;
+const F=['fd','fq','fc','fl','fp'],K=['d','q','c','l','p'];
+const formRow=()=>{const r={};K.forEach((k,j)=>r[k]=$(F[j]).value.trim());return r};
+function paintPrev(){const c=calc(formRow(),S.k[cur]);$('pv').textContent=f(c.vol,4);$('pn').textContent=f(c.net,4);$('pt').textContent=f(c.tot,2)}
+function resetForm(){editing=null;F.forEach((id,j)=>$(id).value=K[j]==='q'?'1':'');$('add').textContent='+ เพิ่ม';$('cancel').hidden=true;paintPrev()}
+F.forEach(id=>{$(id).addEventListener('input',paintPrev);$(id).addEventListener('keydown',e=>{if(e.key==='Enter')$('add').click()})});
+$('add').onclick=()=>{
+  const r=formRow();
+  if(!(n(r.c)>0&&n(r.l)>0)){say('กรอกโตและยาวก่อนเพิ่มรายการ');return}
+  if(!(n(r.q)>0))r.q='1';
+  const was=editing!==null;
+  if(was)S.rows[cur][editing]=r;else S.rows[cur].push(r);
+  persist();resetForm();render();say(was?'แก้ไขรายการแล้ว':'เพิ่มรายการแล้ว');$('fd').focus();
+};
+$('cancel').onclick=()=>{resetForm();render()};
+$('tb').addEventListener('click',e=>{
+  const ed=e.target.closest('[data-ed]'),b=e.target.closest('[data-del]');
+  if(ed){editing=+ed.dataset.ed;const r=S.rows[cur][editing];F.forEach((id,j)=>$(id).value=r[K[j]]);$('add').textContent='อัปเดต';$('cancel').hidden=false;render();$('fd').scrollIntoView({block:'center',behavior:'smooth'});$('fd').focus({preventScroll:true})}
+  if(b)twoTap(b,'d'+b.dataset.del,'ลบ',()=>{S.rows[cur].splice(+b.dataset.del,1);resetForm();persist();render()});
+});
+$('k').oninput=e=>{const v=parseFloat(e.target.value);if(v>0){S.k[cur]=v;persist();render()}};
+['log','wood'].forEach(t=>$('t-'+t).onclick=()=>{cur=t;resetForm();render()});
+
+function twoTap(btn,key,label,action){
+  if(armed===key){armed=null;btn.textContent=label;action();return}
+  armed=key;const old=btn.textContent;btn.textContent='กดอีกครั้งเพื่อยืนยัน';
+  setTimeout(()=>{if(armed===key){armed=null;btn.textContent=label}},3000);
+}
+$('clr').onclick=e=>twoTap(e.target,'clr','ล้างทั้งหมด',()=>{S.rows[cur]=[];resetForm();persist();render();say('ล้างรายการแล้ว')});
+
+$('save').onclick=()=>{
+  const rows=S.rows[cur].filter(r=>calc(r,S.k[cur]).vol>0).map(r=>({...r}));
+  if(!rows.length){say('กรอกโตและยาวอย่างน้อย 1 รายการก่อนบันทึก');return}
+  const t=totals(rows,S.k[cur]);
+  S.hist.unshift({id:Date.now(),type:cur,name:$('name').value.trim(),date:$('date').value||today(),note:$('note').value.trim(),k:S.k[cur],rows,q:t.q,net:t.net,tot:t.tot});
+  persist();renderHist();say('บันทึกรายการแล้ว');
+};
+
+function renderHist(){
+  $('hist').innerHTML=S.hist.length?S.hist.map(h=>{
+    const [y,m,d]=h.date.split('-');
+    return `<div class="rec"><div><span class="tag">${NAMES[h.type]}</span><b>${esc(h.name||'ไม่ระบุชื่อ')}</b>
+    <small>${d}/${m}/${y} · ${h.rows.length} รายการ · ${f(h.net,4)} คิว${h.note?' · '+esc(h.note):''}</small></div>
+    <div style="text-align:right"><b>${f(h.tot,2)}</b> บาท<div class="bar" style="margin:4px 0 0;justify-content:flex-end">
+    <button class="btn p" data-pdf="${h.id}">บันทึก PDF</button><button class="btn" data-load="${h.id}">เปิดดู</button><button class="btn d" data-rm="${h.id}">ลบ</button></div></div></div>`}).join('')
+  :'<p class="empty">ยังไม่มีรายการ กรอกตารางแล้วกด “บันทึกรายการ”</p>';
+}
+$('hist').addEventListener('click',e=>{
+  const l=e.target.closest('[data-load]'),r=e.target.closest('[data-rm]'),p=e.target.closest('[data-pdf]');
+  if(p){exportPdf(S.hist.find(x=>x.id==p.dataset.pdf),p);return}
+  if(l){const h=S.hist.find(x=>x.id==l.dataset.load);if(!h)return;
+    cur=h.type;S.k[cur]=h.k;S.rows[cur]=h.rows.map(x=>({...x}));resetForm();
+    $('name').value=h.name;$('date').value=h.date;$('note').value=h.note;persist();render();scrollTo({top:0,behavior:'smooth'});say('เปิดรายการแล้ว แก้ไขแล้วกดบันทึกเพื่อเก็บเป็นรายการใหม่')}
+  if(r)twoTap(r,'rm'+r.dataset.rm,'ลบ',()=>{S.hist=S.hist.filter(x=>x.id!=r.dataset.rm);persist();renderHist()});
+});
+
+function drawPages(h){
+  const W=1190,H=1684,M=80,RH=48,pages=[];let g,y;
+  const ft=(w,s)=>w+' '+s+'px Sarabun,"Noto Sans Thai",Tahoma,sans-serif';
+  const cols=[['#',50,'l'],['รายละเอียด',230,'l'],['จำนวน',80],['โต (ม.)',80],['ยาว (ม.)',80],['ปริมาตร ม³',120],['สุทธิ (คิว)',120],['ราคา',110],['ราคาสุทธิ',160]];
+  const heads=cols.map(c=>c[0]);
+  const tx=(s,x,yy,al,font,col)=>{g.font=font;g.fillStyle=col||'#14281c';g.textAlign=al;g.fillText(s,x,yy)};
+  const newPage=()=>{const c=document.createElement('canvas');c.width=W;c.height=H;g=c.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,W,H);pages.push(c);y=M};
+  const row=(v,head)=>{
+    if(head){g.fillStyle='#dcfce7';g.fillRect(M,y,W-2*M,RH)}
+    let x=M;
+    cols.forEach((c,i)=>{const l=c[2]==='l',w=c[1];let s=String(v[i]);
+      g.font=ft(400,22);if(i===1)while(g.measureText(s).width>w-14&&s.length>1)s=s.slice(0,-1);
+      tx(s,l?x+8:x+w-8,y+32,l?'left':'right',ft(head?600:400,head?20:22),head?'#15803d':null);x+=w});
+    g.fillStyle='#c8e6d1';g.fillRect(M,y+RH-1,W-2*M,1);y+=RH};
+  newPage();
+  tx('กิตติค้าไม้คำนวนซุง',M,y+24,'left',ft(600,26),'#55705f');y+=44;
+  tx('สรุปรายการไม้ ('+NAMES[h.type]+')',M,y+44,'left',ft(700,48),'#15803d');y+=80;
+  const [yy,mm,dd]=h.date.split('-');
+  [['ชื่อลูกค้า / เลขที่บิล',h.name||'-'],['วันที่',dd+'/'+mm+'/'+yy],['หมายเหตุ',h.note||'-'],['ค่าคงที่ในสูตร',String(h.k)]].forEach(([a,b])=>{tx(a,M,y+28,'left',ft(400,24),'#55705f');tx(b,M+300,y+28,'left',ft(600,26));y+=40});
+  y+=20;row(heads,1);
+  h.rows.forEach((r,i)=>{
+    if(y+RH>H-M-130){newPage();row(heads,1)}
+    const c=calc(r,h.k);
+    row([i+1,r.d||'-',r.q,r.c,r.l,f(c.vol,4),f(c.net,4),f(n(r.p),2),f(c.tot,2)]);
+  });
+  if(y+130>H-M)newPage();
+  y+=24;
+  tx('จำนวนรวม  '+f(h.q,0)+'   |   สุทธิรวม  '+f(h.net,4)+' คิว',W-M,y+30,'right',ft(600,28));y+=50;
+  tx('ราคารวม  '+f(h.tot,2)+' บาท',W-M,y+40,'right',ft(700,38),'#15803d');
+  pages.forEach((c,i)=>{g=c.getContext('2d');tx('หน้า '+(i+1)+'/'+pages.length,W/2,H-40,'center',ft(400,20),'#55705f')});
+  return pages;
+}
+async function makePdf(pages){
+  const enc=new TextEncoder(),parts=[],offs=[];let len=0;
+  const put=d=>{const b=typeof d==='string'?enc.encode(d):d;parts.push(b);len+=b.length};
+  const jpgs=[];
+  for(const c of pages){const b=await new Promise(r=>c.toBlob(r,'image/jpeg',0.92));jpgs.push(new Uint8Array(await b.arrayBuffer()))}
+  const N=pages.length;
+  const obj=(id,fn)=>{offs[id]=len;put(id+' 0 obj\n');fn();put('\nendobj\n')};
+  put('%PDF-1.4\n');
+  obj(1,()=>put('<< /Type /Catalog /Pages 2 0 R >>'));
+  obj(2,()=>put('<< /Type /Pages /Count '+N+' /Kids ['+pages.map((_,i)=>(3+3*i)+' 0 R').join(' ')+'] >>'));
+  pages.forEach((c,i)=>{
+    const p=3+3*i,ct=p+1,im=p+2,cs='q 595 0 0 842 0 0 cm /Im0 Do Q';
+    obj(p,()=>put('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /XObject << /Im0 '+im+' 0 R >> >> /Contents '+ct+' 0 R >>'));
+    obj(ct,()=>put('<< /Length '+cs.length+' >>\nstream\n'+cs+'\nendstream'));
+    obj(im,()=>{put('<< /Type /XObject /Subtype /Image /Width '+c.width+' /Height '+c.height+' /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length '+jpgs[i].length+' >>\nstream\n');put(jpgs[i]);put('\nendstream')});
+  });
+  const xr=len,sz=3+3*N;
+  put('xref\n0 '+sz+'\n0000000000 65535 f \n');
+  for(let i=1;i<sz;i++)put(String(offs[i]).padStart(10,'0')+' 00000 n \n');
+  put('trailer\n<< /Size '+sz+' /Root 1 0 R >>\nstartxref\n'+xr+'\n%%EOF');
+  return new Blob(parts,{type:'application/pdf'});
+}
+async function exportPdf(h,btn){
+  if(!h)return;
+  const old=btn.textContent;btn.disabled=true;btn.textContent='กำลังสร้าง...';
+  const fin=t=>{btn.textContent=t;setTimeout(()=>{btn.textContent=old;btn.disabled=false},2000)};
+  let dl=null;try{dl=window.claude?await window.claude.use('downloads'):null}catch(e){}
+  if(!dl)dl={save:async({filename,data})=>{const u=URL.createObjectURL(data),a=document.createElement('a');a.href=u;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000);return{status:'saved'}}};
+  try{
+    for(const w of [400,600,700])await document.fonts.load(w+' 24px Sarabun');
+    const bytes=await makePdf(drawPages(h));
+    const nm=(h.name||'').replace(/[^ก-๙a-zA-Z0-9 _-]/g,'').trim()||NAMES[h.type];
+    await dl.save({filename:'ไม้-'+nm+'-'+h.date+'.pdf',data:bytes});
+    fin('บันทึกแล้ว ✓');
+  }catch(e){fin(e&&e.code==='declined'?old:'ไม่สำเร็จ')}
+}
+try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}catch(e){}
+$('date').value=today();
+render();
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+</script>
+</body>
+</html>
